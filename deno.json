@@ -1,0 +1,11 @@
+{
+  "name": "@morinokami/deno-says",
+  "version": "0.1.0",
+  "exports": {
+    ".": "./mod.ts"
+  },
+  "imports": {
+    "@std/io": "jsr:@std/io@^0.225.0",
+    "string-width": "npm:string-width@^7.2.0"
+  }
+}
