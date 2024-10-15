@@ -1,5 +1,5 @@
-import { writeAll } from "@std/io/write-all";
 import type { Writer } from "@std/io";
+import { writeAll } from "@std/io/write-all";
 import stringWidth from "string-width";
 
 const DENO_ASCII_ART = String.raw`
@@ -39,7 +39,7 @@ export async function say(
   for (const word of words) {
     const currentLineLength = stringWidth(currentLine.trim());
     const wordLength = stringWidth(word);
-    if (currentLineLength + wordLength + 1 <= maxWidth) {
+    if (currentLineLength + wordLength <= maxWidth) {
       currentLine += `${word} `;
     } else {
       wrappedLines.push(currentLine.trim());

@@ -3,6 +3,7 @@
   "specifiers": {
     "jsr:@std/bytes@^1.0.2": "1.0.2",
     "jsr:@std/io@0.225": "0.225.0",
+    "npm:@types/node@*": "22.5.4",
     "npm:string-width@^7.2.0": "7.2.0"
   },
   "jsr": {
@@ -17,6 +18,12 @@
     }
   },
   "npm": {
+    "@types/node@22.5.4": {
+      "integrity": "sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
     "ansi-regex@6.1.0": {
       "integrity": "sha512-7HSX4QQb4CspciLpVFwyRe79O3xsIZDDLER21kERQ71oaPodF8jL725AgJMFAYbooIqolJoRLuM81SpeUkpkvA=="
     },
@@ -39,6 +46,9 @@
       "dependencies": [
         "ansi-regex"
       ]
+    },
+    "undici-types@6.19.8": {
+      "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
     }
   },
   "workspace": {

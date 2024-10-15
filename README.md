@@ -23,3 +23,33 @@ This will output the following:
                ⎩      ﾄ､
                 u¯u︶u
 ```
+
+A maximum width can be specified using the `--width` flag:
+
+```sh
+deno run jsr:@morinokami/deno-says --width 5 'Hello from Deno!'
+```
+
+This will output the following:
+
+```
+ _______
+< Hello >
+< from  >
+< Deno! >
+ -------
+        \     _
+         \  ( ･ヽ
+               \ \
+               |  ｀ヽ
+               ⎩      ﾄ､
+                u¯u︶u
+```
+
+Addtionally, you can use the `say` function in your own code:
+
+```ts
+import { say } from "jsr:@morinokami/deno-says/say";
+
+say("Hello, World!");
+```
