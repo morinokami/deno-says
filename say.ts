@@ -14,9 +14,9 @@ const DENO_ASCII_ART = String.raw`
 /**
  * Make Deno say something.
  *
- * @param input a string to be written out
- * @param maxWidth the maximum width of a line of text before it is wrapped
- * @param writer a writer that can be written to
+ * @param input The message you want Deno to say
+ * @param maxWidth The maximum width of a line before it is wrapped
+ * @param writer A writer to which the message will be written
  *
  * @example
  * ```ts
